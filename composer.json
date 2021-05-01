@@ -1,0 +1,52 @@
+{
+  "name": "hotmeteor/inertia-statamic",
+  "description": "An Inertia.js Statamic adapter ",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "inertia",
+    "inertia.js",
+    "statamic",
+    "adapter"
+  ],
+  "authors": [
+    {
+      "name": "Adam Campbell",
+      "email": "adam@hotmeteor.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0",
+    "ext-json": "*",
+    "laravel/framework": "^7.30.3|^8.24.0"
+  },
+  "require-dev": {
+    "nunomaduro/collision": "^4.0|^5.1",
+    "orchestra/testbench": "^5.0|^6.0",
+    "phpunit/phpunit": "^8.0|^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hotmeteor\\Inertia\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hotmeteor\\Inertia\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Hotmeteor\\Inertia\\InertiaStatamicServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
