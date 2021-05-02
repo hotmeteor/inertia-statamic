@@ -17,9 +17,11 @@
     }
   ],
   "require": {
-    "php": "^7.4|^8.0",
+    "php": "^7.3|^8.0",
     "ext-json": "*",
-    "laravel/framework": "^7.30.3|^8.24.0"
+    "inertiajs/inertia-laravel": "^0.4.1",
+    "illuminate/support": "^7.0|^8.0",
+    "statamic/cms": "^3.1"
   },
   "require-dev": {
     "nunomaduro/collision": "^4.0|^5.1",
@@ -28,12 +30,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Hotmeteor\\Inertia\\": "src"
+      "Hotmeteor\\Inertia\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Hotmeteor\\Inertia\\Tests\\": "tests/"
+      "Tests\\": "tests/"
     }
   },
   "scripts": {
@@ -42,7 +44,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Hotmeteor\\Inertia\\InertiaStatamicServiceProvider"
+        "ServiceProvider"
       ]
     }
   },
