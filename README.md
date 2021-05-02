@@ -12,7 +12,7 @@ Make sure you have your Inertia template file set at `resources/views/app.blade.
 
 ## Credits
 
-- [Adam Campbell](https://github.com/hotmeteor)- 
+- [Adam Campbell](https://github.com/hotmeteor)
 - [Statamic](https://statamic.com)
 - [The amazing Inertia.js libraries](https://github.com/inertiajs)
 - [All Contributors](../../contributors)
