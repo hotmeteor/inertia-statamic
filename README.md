@@ -1,5 +1,7 @@
 # Inertia.js adapter for Statamic
 
+[![Latest Stable Version](https://poser.pugx.org/hotmeteor/inertia-statamic/v)](//packagist.org/packages/hotmeteor/inertia-statamic)
+
 ## Installation
 
 You can install the package through Composer.
