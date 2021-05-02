@@ -44,7 +44,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "ServiceProvider"
+        "Hotmeteor\\Inertia\\ServiceProvider"
       ]
     }
   },
