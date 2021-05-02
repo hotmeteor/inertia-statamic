@@ -8,7 +8,14 @@ You can install the package through Composer.
 composer require hotmeteor/inertia-statamic
 ```
 
+## Usage
+
 Make sure you have your Inertia template file set at `resources/views/app.blade.php`.
+
+Any entry or page that is using a template called `app` will use Inertia.js.
+
+Enjoy!
+
 
 ## Credits
 
