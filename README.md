@@ -1,5 +1,7 @@
 # Inertia.js adapter for Statamic
 
+[Statamic](https://statamic.com) server side adapter for [Inertia.js](https://inertiajs.com) to build single-page apps, without building an API.
+
 [![Latest Stable Version](https://poser.pugx.org/hotmeteor/inertia-statamic/v)](//packagist.org/packages/hotmeteor/inertia-statamic)
 
 ## Installation
