@@ -16,6 +16,8 @@ Make sure you have your Inertia template file set at `resources/views/app.blade.
 
 Any entry or page that is using a template called `app` will use Inertia.js.
 
+The `props` will contain all of the attributes and objects from your entry or page.
+
 Enjoy!
 
 
