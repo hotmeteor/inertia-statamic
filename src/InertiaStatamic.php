@@ -25,7 +25,7 @@ class InertiaStatamic
     {
         $page = app(FrontendController::class)->index($request);
 
-        if ($page->augmentedValue('template') === 'app' && ($page instanceof Page || $page instanceof Entry)) {
+        if (($page instanceof Page || $page instanceof Entry) && $page->template() === 'app') {
             return Inertia::render(
                 $this->buildComponentPath($page),
                 $this->buildProps($page)
