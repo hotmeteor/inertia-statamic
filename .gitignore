@@ -6,3 +6,4 @@ composer.lock
 /assets/
 /phpunit.xml.bak
 .phpunit.result.cache
+.php_cs.cache
