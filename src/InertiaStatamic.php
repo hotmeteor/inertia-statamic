@@ -10,8 +10,8 @@ use Illuminate\Support\Str;
 use Inertia\Inertia;
 use JsonSerializable;
 use Statamic\Entries\Entry;
+use Statamic\Facades\Data;
 use Statamic\Fields\Value;
-use Statamic\Http\Controllers\FrontendController;
 use Statamic\Structures\Page;
 
 class InertiaStatamic
@@ -23,7 +23,7 @@ class InertiaStatamic
      */
     public function handle(Request $request, Closure $next)
     {
-        $page = app(FrontendController::class)->index($request);
+        $page = Data::findByRequestUrl($request->url());
 
         if (($page instanceof Page || $page instanceof Entry) && $page->template() === 'app') {
             return Inertia::render(
