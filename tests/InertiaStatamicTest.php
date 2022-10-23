@@ -2,7 +2,7 @@
 
 namespace Tests;
 
-use Inertia\Testing\Assert;
+use Inertia\Testing\AssertableInertia;
 
 class InertiaStatamicTest extends TestCase
 {
@@ -58,12 +58,12 @@ class InertiaStatamicTest extends TestCase
             ->assertStatus(200)
             ->assertSee('data-page')
             ->assertDontSee('@inertia')
-            ->assertInertia(function (Assert $page) {
+            ->assertInertia(function (AssertableInertia $page) {
                 return $page
                     ->component('About')
                     ->where('collection.title', 'Pages')
                     ->where('collection.handle', 'pages')
-                    ->where('content', 'This is the about page.')
+                    ->where('content', '<p>This is the about page.</p>')
                     ->where('id', 'about')
                     ->where('permalink', 'http://localhost/about')
                     ->where('slug', 'about')
