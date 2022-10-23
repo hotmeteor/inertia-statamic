@@ -31,7 +31,7 @@ class InertiaStatamicTest extends TestCase
 
         $this->get('/about')
             ->assertStatus(200)
-            ->assertSee('<h1>The About Page</h1> <p>This is the about page.</p>', false);
+            ->assertSee('<h1>The About Page</h1> <p><p>This is the about page.</p>', false);
     }
 
     /** @test */
@@ -45,7 +45,7 @@ class InertiaStatamicTest extends TestCase
 
         $this->get('/about')
             ->assertStatus(200)
-            ->assertSee('<h1>The About Page</h1> <p>This is the about page.</p>', false);
+            ->assertSee('<h1>The About Page</h1> <p><p>This is the about page.</p>', false);
     }
 
     /** @test */
