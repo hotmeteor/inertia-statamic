@@ -61,6 +61,7 @@ class FakeViewFactory extends Factory
 class FakeViewEngine extends \Statamic\View\Antlers\Engine
 {
     public $rawContents = [];
+
     public $renderedContents = [];
 
     public function get($path, array $data = [])
