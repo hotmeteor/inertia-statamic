@@ -63,7 +63,7 @@ class InertiaStatamicTest extends TestCase
                     ->component('About')
                     ->where('collection.title', 'Pages')
                     ->where('collection.handle', 'pages')
-                    ->where('content', '<p>This is the about page.</p>')
+                    ->where('content', "<p>This is the about page.</p>\n")
                     ->where('id', 'about')
                     ->where('permalink', 'http://localhost/about')
                     ->where('slug', 'about')
