@@ -118,7 +118,6 @@ class TestCase extends OrchestraTestCase
         Entry::make()
             ->id($slug)
             ->collection($collection)
-            ->blueprint('default')
             ->published(true)
             ->slug($slug)
             ->data($data)
